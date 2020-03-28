@@ -30,6 +30,11 @@ h3 {
   color: #000E4B;
   margin: 0; }
 
+.container {
+  width: 1110px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
 /*Хедер-начало*/
 .main-header {
   position: fixed;
@@ -38,7 +43,8 @@ h3 {
   height: 64px;
   border-bottom: 1px solid #DCDCDC;
   background-color: #fff;
-  margin: 0; }
+  margin: 0;
+  z-index: 2; }
 
 .main-navigation {
   display: -webkit-box;
@@ -49,11 +55,6 @@ h3 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-
-.container {
-  width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px; }
 
 .main-navigation-warper {
   display: -webkit-box;
@@ -102,33 +103,40 @@ h3 {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative; }
+  position: relative;
+  margin-bottom: 60px; }
 
 .separator-bg {
   position: absolute;
-  width: 10000px;
+  width: -webkit-calc(100vw - (((100vw - 1110px)/2) + 95px));
+  width: calc(100vw - (((100vw - 1110px)/2) + 95px));
   height: 76px;
   left: 95px;
   top: 186px;
   background: #FFE600;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px;
   z-index: -1; }
 
 .personal-info-text {
   padding-left: 95px; }
 
 .h1 {
-  position: relative; }
-
-/*Персональная-информация*/
-.main-container {
-  width: 1110px;
-  margin: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
   margin-top: 80px;
   margin-bottom: 58px; }
+
+/*Персональная-информация*/
+/*Слайдер*/
+.slider {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .bold-text {
   font-weight: bold; }
@@ -162,3 +170,5 @@ h3 {
   background: #F4F4F4;
   border-radius: 5px;
   margin-top: 30px; }
+
+/*Слайдер*/
