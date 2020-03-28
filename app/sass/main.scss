@@ -1,0 +1,171 @@
+body {
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000E4B;
+	padding-top: 64px;
+	overflow-x: hidden;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 100px;
+	line-height: 117px;
+	color: #000E4B;
+}
+
+h3 {
+	margin: 0;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 42px;
+	color: #000E4B;
+}
+
+.b2 {
+	height: 16px;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+	color: #000E4B;
+	margin: 0;
+}
+
+
+/*Хедер-начало*/
+
+.main-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 64px;
+	border-bottom: 1px solid #DCDCDC;
+	background-color: #fff;
+	margin: 0;
+}
+
+.main-navigation {
+	display: flex;
+	align-items: center;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.main-navigation-warper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logotype{
+	height: 16px;
+	padding: 24px 0;
+}
+
+.main-button {
+	font-size: 16px;
+	line-height: 19px;
+	color: #000E4B;
+	font-weight: bold;
+
+	float: right;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.low-vertical-separator {
+	display: inline-block;
+	margin-right: 20px;
+	padding-top: 20px;
+}
+
+.header-social-icon {
+	display: inline-block;
+	margin-right: 20px;
+	padding-top: 22px;
+}
+
+/*Хедер-конец*/
+
+
+/*Персональная-информация*/
+
+.personal-info {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.separator-bg {
+	position: absolute;
+	width: 10000px;
+	height: 76px;
+	left: 95px;
+	top: 186px;
+
+	background: #FFE600;
+	border-radius: 4px 0px 0px 4px;
+	z-index: -1;
+}
+
+.personal-info-text {
+	padding-left: 95px;
+}
+
+.h1 {
+	position: relative;
+}
+
+/*Персональная-информация*/
+
+.main-container {
+	width: 1110px;
+	margin: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 80px;
+	margin-bottom: 58px;
+}
+
+
+
+.bold-text {
+	font-weight: bold;
+}
+
+.works-main {
+	width: 1110px;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 102px;
+	margin-bottom: 0;
+}
+
+.slider-name {
+	float: left;
+}
+
+
+.work-name {
+	margin-bottom: 5px;
+	
+}
+
+.work-info {
+	width: 1110px;
+	height: 307px;
+	background: #F4F4F4;
+	border-radius: 5px;
+	margin-top: 30px;
+}
