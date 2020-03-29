@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "social-icons";
+  src: url(../app/fonts/icomoon.ttf);
+  font-style: normal;
+  font-weight: normal; }
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -153,7 +159,52 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 20px; }
+  margin-right: 20px;
+  font-family: "social-icons"; }
+
+.icon-dribbble {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  color: #000E4B; }
+
+.icon-dribbble:hover {
+  color: #EA4C89; }
+
+.icon-dribbble:before {
+  content: "\e900"; }
+
+.icon-behance {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  color: #000E4B; }
+
+.icon-behance:hover {
+  color: #0157FE; }
+
+.icon-behance:before {
+  content: "\e901"; }
 
 /*Хедер-конец*/
 /*Персональная-информация*/
