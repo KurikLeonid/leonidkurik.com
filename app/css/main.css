@@ -238,7 +238,8 @@ a {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  position: relative; }
 
 .bold-text {
   font-weight: bold; }
@@ -275,7 +276,8 @@ a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  position: relative; }
 
 .amoun-of-pages {
   display: -webkit-box;
@@ -298,7 +300,7 @@ a {
 .work-info__resurce {
   margin-left: 0;
   margin-top: 60px;
-  width: 285px; }
+  width: 265px; }
 
 .work-info__card {
   display: -webkit-box;
@@ -317,25 +319,21 @@ a {
   margin-bottom: 30px; }
 
 .work-preview__container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   width: 770px;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 265px;
   min-width: 0; }
 
-.work-preview__slide__item {
+.work-preview__item {
   width: 770px;
   height: 400px;
   min-width: 0; }
 
 .slider__pagination {
-  width: 95px;
+  margin-left: 770px;
+  width: 75px;
   height: 307px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -402,10 +400,10 @@ a {
           align-self: start;
   margin-top: 10px; }
 
-.slick_list {
+.slick-list {
   overflow: hidden; }
 
-.slick_track {
+.slick-track {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

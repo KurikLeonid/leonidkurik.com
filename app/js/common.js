@@ -1,6 +1,6 @@
 $(function() {
-		$('.').slick({
-			arrows:false,
+		$('.work-preview__container').slick({
+			arrows: false,
 			infinite: true
 		});
 });
