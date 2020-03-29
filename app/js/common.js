@@ -1,5 +1,4 @@
 $(function() {
-
-	// Пользовательские функции
-
+		console.log('zhopia'),
+		$('.work-preview__container').slick();
 });
