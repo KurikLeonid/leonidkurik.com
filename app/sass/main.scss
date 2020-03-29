@@ -126,6 +126,10 @@ a {
 	align-items: center;
 }
 
+.main-button:hover {
+	color: $color-yellow;
+}
+
 .low-vertical-separator {
 	align-self: center;
 	margin-right: 20px;

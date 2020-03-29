@@ -139,6 +139,9 @@ a {
       -ms-flex-align: center;
           align-items: center; }
 
+.main-button:hover {
+  color: #FFE600; }
+
 .low-vertical-separator {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
