@@ -285,26 +285,18 @@ a {
 
 .work-preview__container {
 	display: flex;
-	width: 730px;
+	width: 770px;
 	align-items: flex-end;
 	position: relative;
+	min-width: 0;
 }
 
-.work-preview__slide__front {
-	width: 730px;
-	height: 379px;
-	z-index: 2;
+.work-preview__slide__item {
+	width: 770px;
+	height: 400px;
+	min-width: 0;
 }
 
-.work-preview__slide__back {
-	width: 710px;
-	height: 379px;
-	z-index: 1;
-	position: absolute;
-	margin-left: 10px;
-	padding-bottom: 19px;
-	opacity: 0.6;
-}
 
 .slider__pagination {
 	width: 95px;
@@ -352,6 +344,14 @@ a {
 	z-index: 2;
 	align-self: start;
 	margin-top: 10px;
+}
+
+.slick_list {
+	overflow: hidden;
+}
+
+.slick_track {
+	display: flex;
 }
 
 /*Слайдер*/

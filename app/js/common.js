@@ -1,4 +1,6 @@
 $(function() {
-		console.log('zhopia'),
-		$('.work-preview__container').slick();
+		$('.').slick({
+			arrows:false,
+			infinite: true
+		});
 });
