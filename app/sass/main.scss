@@ -403,6 +403,13 @@ a {
 }
 
 @media (max-width: 1200px) {
+	.container {
+		width: 930px;
+		margin: 0 auto;
+		padding: 0 15px;
+		position: relative;
+	}
+	
 	.background-big-bush {
 		display: none;
 	}
@@ -411,5 +418,42 @@ a {
 		position: absolute;
 		margin-top: -64px;
 		margin-left: 720px;
+	}
+
+	.work-info__resurce {
+		margin-left: 0;
+		margin-top: 60px;
+		width: 150px;
+	}
+
+	.work-info {
+		width: 930px;
+		height: 307px;
+		background: $color-light-gray;
+		border-radius: 5px 5px 0 0;
+		margin-top: 30px;
+		display: flex;
+		position: relative;
+	}
+
+	.work-preview__container {
+		display: block;
+		width: 705px;
+		height: 366px;
+		position: absolute;
+		bottom: 0;
+		left: 150px;
+		min-width: 0;
+	}
+
+	.work-preview__item {
+		width: 705px;
+		height: 366px;
+		min-width: 0;
+	}
+
+	img {
+		max-width:100%;
+		height:auto;
 	}
 }
