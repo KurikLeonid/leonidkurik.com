@@ -88,7 +88,7 @@ a {
 	border-bottom: 1px solid $color-dark-gray;
 	background-color: $color-white;
 	margin: 0;
-	z-index: 3;
+	z-index: 20;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -367,6 +367,7 @@ a {
 
 .slick-track {
 	display: flex;
+	min-width: 100vw;
 }
 
 .work-type {
@@ -385,4 +386,30 @@ a {
 	position: absolute;
 	margin-top: 21px;
 	margin-left: -405px;
+}
+
+@media (max-width: 1545px) {
+	.background-big-bush {
+		position: absolute;
+		margin-top: 21px;
+		margin-left: -305px;
+	}
+
+	.background-man {
+		position: absolute;
+		margin-top: -64px;
+		margin-left: 720px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.background-big-bush {
+		display: none;
+	}
+
+	.background-man {
+		position: absolute;
+		margin-top: -64px;
+		margin-left: 720px;
+	}
 }
