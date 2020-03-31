@@ -59,6 +59,7 @@ h3 {
 	width: 1110px;
 	margin: 0 auto;
 	padding: 0 15px;
+	position: relative;
 }
 
 button {
@@ -83,7 +84,7 @@ a {
 	position: fixed;
 	top: 0;
 	height: 64px;
-	width: 100%;
+	width: 100vw;
 	border-bottom: 1px solid $color-dark-gray;
 	background-color: $color-white;
 	margin: 0;
@@ -245,7 +246,7 @@ a {
 
 .work-name {
 	margin-bottom: 5px;
-	
+	pointer-events: none;
 }
 
 .work-info {
@@ -259,17 +260,21 @@ a {
 }
 
 .amoun-of-pages {
-	display: flex;
+	display: block;
 	flex-direction: column;
 }
 
 .work-info__amount {
+	text-align: center;
 	margin: 0;
+	display: block;
 	margin-bottom: 3px;
+	pointer-events: none;
 }
 
 .work-info__label {
 	margin: 0;
+	text-align: center;
 }
 
 .work-info__resurce {
@@ -279,9 +284,7 @@ a {
 }
 
 .work-info__card {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	display: block;
 	margin-bottom: 30px;
 }
 
@@ -344,12 +347,19 @@ a {
 	background-color: $color-dark;
 }
 
-.slider__pagination_mouse {
+.slider__pagination_mouse{
 	z-index: 2;
 	align-self: start;
 	margin-top: 10px;
 }
 
+.slider__pagination_mouse__1 {
+	margin-top: 10px;
+}
+
+.slider__pagination_mouse__2 {
+	margin-top: 73px;
+}
 
 .slick-list {
 	overflow: hidden;
@@ -359,4 +369,20 @@ a {
 	display: flex;
 }
 
+.work-type {
+	pointer-events: none;
+}
+
 /*Слайдер*/
+
+.background-man {
+	position: absolute;
+	margin-top: -64px;
+	margin-left: 850px;
+}
+
+.background-big-bush {
+	position: absolute;
+	margin-top: 21px;
+	margin-left: -405px;
+}

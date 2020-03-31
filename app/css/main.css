@@ -44,7 +44,8 @@ h3 {
 .container {
   width: 1110px;
   margin: 0 auto;
-  padding: 0 15px; }
+  padding: 0 15px;
+  position: relative; }
 
 button {
   border: none;
@@ -64,7 +65,7 @@ a {
   position: fixed;
   top: 0;
   height: 64px;
-  width: 100%;
+  width: 100vw;
   border-bottom: 1px solid #DCDCDC;
   background-color: #fff;
   margin: 0;
@@ -265,7 +266,8 @@ a {
   float: left; }
 
 .work-name {
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  pointer-events: none; }
 
 .work-info {
   width: 1110px;
@@ -280,10 +282,7 @@ a {
   position: relative; }
 
 .amoun-of-pages {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -291,11 +290,15 @@ a {
           flex-direction: column; }
 
 .work-info__amount {
+  text-align: center;
   margin: 0;
-  margin-bottom: 3px; }
+  display: block;
+  margin-bottom: 3px;
+  pointer-events: none; }
 
 .work-info__label {
-  margin: 0; }
+  margin: 0;
+  text-align: center; }
 
 .work-info__resurce {
   margin-left: 0;
@@ -303,19 +306,7 @@ a {
   width: 265px; }
 
 .work-info__card {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
   margin-bottom: 30px; }
 
 .work-preview__container {
@@ -400,6 +391,12 @@ a {
           align-self: start;
   margin-top: 10px; }
 
+.slider__pagination_mouse__1 {
+  margin-top: 10px; }
+
+.slider__pagination_mouse__2 {
+  margin-top: 73px; }
+
 .slick-list {
   overflow: hidden; }
 
@@ -409,4 +406,16 @@ a {
   display: -ms-flexbox;
   display: flex; }
 
+.work-type {
+  pointer-events: none; }
+
 /*Слайдер*/
+.background-man {
+  position: absolute;
+  margin-top: -64px;
+  margin-left: 850px; }
+
+.background-big-bush {
+  position: absolute;
+  margin-top: 21px;
+  margin-left: -405px; }
