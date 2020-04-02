@@ -12,6 +12,7 @@ $(function() {
 			$('.work-info__amount').slick('slickNext');
 			$('.work-type').slick('slickNext');
 			$('.slider__pagination_mouse').slick('slickNext');
+			$('.work').slick('slickNext');
 		});		
 });
 
@@ -32,6 +33,14 @@ $('.work-info__amount').slick({
 });
 
 $('.work-type').slick({
+	arrows: false,
+	infinite: true,
+	speed: 100,
+	fade: true,
+	verticalSwiping: true
+});
+
+$('.work').slick({
 	arrows: false,
 	infinite: true,
 	speed: 100,
