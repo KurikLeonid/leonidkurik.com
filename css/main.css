@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Icons";
-  src: url("fonts/icomoon.ttf") format("woff2"), url("fonts/icomoon.ttf") format("woff"); }
+  src: url("/fonts/icomoon.ttf") format("woff2"), url("/fonts/icomoon.ttf") format("woff"); }
 
 body {
   margin: 0;
@@ -127,6 +127,9 @@ a {
 
 .go-to__link div a:visited {
   color: #000E4B; }
+
+.slider-list {
+  overflow: auto; }
 
 /*Хедер-начало*/
 .main-header {

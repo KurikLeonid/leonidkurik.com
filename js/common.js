@@ -28,7 +28,7 @@ $('.work-name').slick({
 $('.go-to__link').slick({
 	arrows: false,
 	infinite: true,
-	speed: 10000,
+	speed: 100,
 	fade: true,
 	verticalSwiping: true
 });
