@@ -13,6 +13,7 @@ $(function() {
 			$('.work-type').slick('slickNext');
 			$('.slider__pagination_mouse').slick('slickNext');
 			$('.work').slick('slickNext');
+			$('.go-to__link').slick('slickNext');
 		});		
 });
 
@@ -20,6 +21,14 @@ $('.work-name').slick({
 	arrows: false,
 	infinite: true,
 	speed: 100,
+	fade: true,
+	verticalSwiping: true
+});
+
+$('.go-to__link').slick({
+	arrows: false,
+	infinite: true,
+	speed: 10000,
 	fade: true,
 	verticalSwiping: true
 });
@@ -61,5 +70,6 @@ $(function() {
 			$('.work-info__amount').slick('slickNext');
 			$('.work-type').slick('slickNext');
 			$('.work-preview__container').slick('slickNext');
+			$('.go-to__link').slick('slickNext');
 		});		
 });
