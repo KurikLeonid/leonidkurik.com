@@ -120,16 +120,20 @@ a {
 
 .go-to__link div a {
   color: #000E4B;
-  width: 48px; }
+  width: 48px;
+  outline: none !important; }
 
-.go-to__link:hover {
-  color: #FFE600; }
+.go-to__link div a:hover {
+  color: #FFE600 !important; }
 
 .go-to__link div a:visited {
   color: #000E4B; }
 
 .slider-list {
   overflow: auto; }
+
+.slick-slide {
+  outline: none !important; }
 
 /*Хедер-начало*/
 .main-header {
@@ -456,7 +460,8 @@ a {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative; }
+  position: relative;
+  left: -4px; }
 
 .slider__pagination__separator {
   position: absolute;
@@ -774,12 +779,15 @@ a {
   .go-to div a {
     text-align: left;
     width: 60px;
-    margin-top: 10px;
     -webkit-align-self: center;
         -ms-flex-item-align: center;
-            align-self: center; }
+            align-self: center;
+    float: left; }
   .go-to div img {
-    padding: 10px; }
+    position: absolute;
+    padding: 10px;
+    left: 40px;
+    top: 0px; }
   .go-to__link {
     margin-top: 2px; } }
 
@@ -796,8 +804,8 @@ a {
     width: 450px; }
   .separator-bg {
     position: absolute;
-    width: -webkit-calc(100vw - ((50vw - 555px) + 95px));
-    width: calc(100vw - ((50vw - 555px) + 95px));
+    width: -webkit-calc(100vw - ((50vw - 255px) + 95px));
+    width: calc(100vw - ((50vw - 255px) + 95px));
     height: 54px;
     left: 95px;
     top: 100px;
@@ -866,19 +874,19 @@ a {
             flex-direction: row;
     position: absolute;
     left: 20px;
-    top: 282px;
+    top: 272px;
     text-align: center; }
-  .go-to div a {
+  .go-to__link div a {
     text-align: left;
-    width: 60px;
     margin-top: 10px;
     -webkit-align-self: center;
         -ms-flex-item-align: center;
-            align-self: center; }
+            align-self: center;
+    float: left !important; }
   .go-to div img {
-    padding: 10px; }
-  .go-to__link {
-    margin-top: 2px; } }
+    padding: 20px; }
+  .go-to div {
+    float: left !important; } }
 
 @media (max-width: 568px) {
   .background-man-l-xs {
@@ -906,10 +914,10 @@ a {
     font-size: 14px; }
   .separator-bg {
     position: absolute;
-    width: -webkit-calc(100vw - ((50vw - 555px) + 95px));
-    width: calc(100vw - ((50vw - 555px) + 95px));
+    width: -webkit-calc(100vw - ((50vw - 145px) + 40px));
+    width: calc(100vw - ((50vw - 145px) + 40px));
     height: 54px;
-    left: 95px;
+    left: 40px;
     top: 100px;
     background: #FFE600;
     border-radius: 4px 0 0 4px;
@@ -1052,7 +1060,7 @@ a {
             flex-direction: row;
     position: absolute;
     left: 10px;
-    top: 160px;
+    top: 150px;
     text-align: center; }
   .go-to div img {
     display: none; } }

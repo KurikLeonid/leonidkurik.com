@@ -8,12 +8,12 @@ $(function () {
 		verticalSwiping: true
 	});
 	$('.work-preview__container').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+		$('.go-to__link').slick('slickNext');
 		$('.work-name').slick('slickNext');
 		$('.work-info__amount').slick('slickNext');
 		$('.work-type').slick('slickNext');
 		$('.slider__pagination_mouse').slick('slickNext');
 		$('.work').slick('slickNext');
-		$('.go-to__link').slick('slickNext');
 	});
 	$('.work-name').slick({
 		arrows: false,
