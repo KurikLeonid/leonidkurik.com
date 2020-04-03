@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Icons";
+  src: url("fonts/icomoon.ttf") format("woff2"), url("fonts/icomoon.ttf") format("woff"); }
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -76,7 +80,19 @@ a {
   display: none; }
 
 .pravicy {
-  display: none; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+  line-height: 140%;
+  opacity: 0.3; }
 
 .mobile-nextwork {
   display: none; }
@@ -102,7 +118,7 @@ a {
 .go-to img {
   color: #000E4B; }
 
-.go-to__link {
+.go-to__link div a {
   color: #000E4B;
   width: 48px; }
 
@@ -207,7 +223,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-right: 20px;
-  font-family: "social-icons"; }
+  font-family: "Icons"; }
 
 .icon-dribbble {
   display: -webkit-box;
@@ -215,7 +231,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-right: 20px;
-  font-family: 'icomoon' !important;
+  font-family: "Icons" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -236,7 +252,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-right: 20px;
-  font-family: 'icomoon' !important;
+  font-family: "Icons" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -326,7 +342,7 @@ a {
   width: 1110px;
   height: 307px;
   background: #F4F4F4;
-  border-radius: 5px 5px 0 0;
+  border-radius: 5px;
   margin-top: 30px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -383,10 +399,10 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -491,7 +507,7 @@ a {
 
 .background-big-bush {
   position: absolute;
-  margin-top: 21px;
+  margin-top: 55px;
   margin-left: -405px; }
 
 @media (max-width: 1545px) {
@@ -541,7 +557,7 @@ a {
     width: 930px;
     height: 307px;
     background: #F4F4F4;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px;
     margin-top: 50px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -661,7 +677,7 @@ a {
     width: 690px;
     height: 411px;
     background: #F4F4F4;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px;
     margin-top: 30px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -914,7 +930,7 @@ a {
     width: 290px;
     height: 190px;
     background: #F4F4F4;
-    border-radius: 5px 5px 0 0;
+    border-radius: 5px;
     margin-top: 10px;
     display: -webkit-box;
     display: -webkit-flex;
