@@ -130,7 +130,7 @@ a {
   color: #000E4B; }
 
 .slider-list {
-  overflow: auto; }
+  overflow: hidden; }
 
 .slick-slide {
   outline: none !important; }
